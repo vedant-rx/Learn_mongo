@@ -9,8 +9,8 @@ print(url)
 
 client = MongoClient(url)
 
-db = client["ytmanager"]
-video_collection = db["videos"]
+db_name = client["ytmanager"]
+video_collection = db_name["videos"]
 print(video_collection)
 
 def list_all_videos():
