@@ -1,6 +1,11 @@
 from pymongo import MongoClient
 from bson import ObjectId
-url = "mongodb://localhost:27017/"
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+url =os.getenv("URL")
+print(url)
 
 client = MongoClient(url)
 
